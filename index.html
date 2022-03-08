@@ -10,28 +10,27 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug==" crossorigin="anonymous" />
     <link
     href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-    <div id="nav">
-        <div class="myname">Heung</div>
-        <ul class="nav_menu">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About & Skill</a>
-            </li>
-            <li>
-                <a href="#">My Stuff</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
+    <nav id="navbar">
+        <div>
+          <a id="navbar__logo" href="#">HeungNyun</a>
+        </div>
+        <ul class="navbar__menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutskills">About & Skills</a></li>
+          <li><a href="#work">My Stuff</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
+        <!-- Toogle button -->
+        <button class="navbar__toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
 </body>
 </html>
