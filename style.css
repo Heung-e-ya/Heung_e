@@ -13,7 +13,9 @@ body {
     margin: 0;
     cursor: default;
 }
-
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
 a {
     text-decoration: none;
 }
@@ -41,7 +43,7 @@ button {
     justify-content: space-between;
     background-color: transparent;
     align-items: center;
-    padding: 16px;
+    padding: 16px 26px;
     z-index: 1;
 }
 
@@ -58,10 +60,9 @@ button {
     color: black;
 }
 #navbar.navbar--dark {
-    background-color: #73aace;
+    background-color: var(--color-blue);
     color: #ffffff;
     padding: 8px 12px;
-    margin: 0 4px;   
     transition: all 500ms ease-in-out;
 }
 
@@ -93,7 +94,186 @@ button {
     color: #fff;
     display: none;
 }
+#home{
+    background: url(image/home-img.jpg) center/cover no-repeat;
+    padding: 40px;
+    padding-top: 120px;
+    text-align: center;
+    
+}
+.home__avatar {
+    width: 250px;
+    height: 250px;
+    background-image: url(image/my.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition-duration: 1s;
+}
+.home__avatar_text {
+    position: absolute;
+    transition: 1s;
+    top: 165px;
+    left: 54%;
+    text-align: left;
+    opacity: 0;
+    color: #fff;
+    background-color: rgb(0,0,0,0.5);
+}
+.home__avatar:hover{
+    width: 500px;
+    height: 500px;
+    transition: 1s;
+}
 
+.home__avatar:hover .home__avatar_text{
+    opacity: 1;
+}
+.home__contact {
+    /* margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px; */
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    /* touch-action: manipulation; */
+}
+.home__contact:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+.home__contact:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+  /* Contact */
+#contact {
+    padding: 50px 0;
+    background-color:#ddd;
+    text-align: center;
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+    color: #4d4d4d;
+    font-size: 24px;
+}
+.contact__rights {
+    font-size: 16px;
+}
+
+.contact__title {
+    margin: 32px 0;
+}
+
+.contact__links {
+    font-size: 48px;
+    margin: 24px 0;
+}
+
+.contact__links i:hover {
+    transform: scale(1.1);
+    color: var(--color-blue);
+    transition: all 500ms ease-in;
+}
+
+.contact__title{
+    font-size: 26px;
+}
+.fab{color: white;}
+
+.sub-img{
+
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.sub-img2{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.sub-img2-box{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+.sub-box{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.sub-box2{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.sub-box3{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.show{
+    width: 100%;
+    max-width: 1200px;
+}
+.sub-box a{
+    position: absolute;
+    width: 257px;
+    height: 64px;
+    left: 638px;
+    top: 122px;
+}
+.sub-box2 a{
+    position: absolute;
+    width: 257px;
+    height: 64px;
+    left: 638px;
+    top: 122px;
+}
+.sub-box3 a{
+    position: absolute;
+    width: 257px;
+    height: 64px;
+    left: 638px;
+    top: 122px;
+}
+.section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* resize */
 @media screen and (max-width: 768px) {
     
     #home{
@@ -113,6 +293,7 @@ button {
 
     #navbar.navbar--dark {
         padding: 16px;
+
     }
     .navbar__menu {
         flex-direction: column;
@@ -124,4 +305,12 @@ button {
     .navbar__menu.open {
         display: block;
     }
+    .home__avatar:hover{
+        width: 350px;
+        height: 350px;
+    }
+    .home__avatar_text {
+        left: 60%;
+    }
+    
 }
