@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -41,4 +42,28 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* nav */
+#nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: transparent; */
+    background-color: #999;
+    align-items: center;
+    padding: 16px;
+    z-index: 1;
+}
+.nav_menu{
+    display: flex;
+}
+.nav_menu li{
+    border:1px solid;
+    padding: 8px 12px;
+}
+.nav_menu li a{
+    padding: 8px 12px;
+    color: #000;
 }
