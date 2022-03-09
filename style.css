@@ -427,14 +427,12 @@ button {
     .tool_box{
         width: 100%;
         background-color: steelblue;
-        flex-direction: row;
     }
     .tool_box h3{
         font-size:20px;
     }
     .tool_box ul{
         background-color: transparent;
-        width: 30%;
     }
     .tool_box ul li{
         text-decoration: underline;
@@ -442,6 +440,6 @@ button {
     }
     
     .skill_power_container{
-        height: 750px;
+        height: 900px;
     }
 }
