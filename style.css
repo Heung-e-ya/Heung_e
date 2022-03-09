@@ -182,6 +182,7 @@ button {
 }
 #aboutskills p{
     font-size: 17px;
+    margin-bottom: 40px;
 }
 .icon{
     width: 80px;
@@ -394,11 +395,15 @@ button {
 
     .navbar__menu.open {
         display: block;
+        margin-top: 15px;
     }
+    .navbar__menu.open li a{color:#fff;}
     .home__avatar:hover{
         width: 350px;
         height: 350px;
     }
+    .home__title{font-size: 35px;}
+    .home__description{font-size: 16px;}
     .home__avatar_text {
         left: 60%;
     }
@@ -414,6 +419,7 @@ button {
     }
     .major h2{
         text-decoration: underline;
+        font-size: 12px;
     }
     .skill_power_container{
         flex-direction:column;
