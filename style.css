@@ -172,15 +172,15 @@ button {
 
 
 /* skill */
-#aboutskills {
+#aboutskills ,#work{
     padding: 0 50px;
     margin-top: 100px;
 }
-#aboutskills h1,#aboutskills p{ text-align: center;}
-#aboutskills h1{
+#aboutskills h1,#work h1,#aboutskills p,#work p{ text-align: center;}
+#aboutskills h1,#work h1{
     font-size: 48px;
 }
-#aboutskills p{
+#aboutskills p,#work p{
     font-size: 17px;
     margin-bottom: 40px;
 }
@@ -258,6 +258,42 @@ button {
     background-color: #4d4d4d;
     color: #fff;
 }
+/* work */
+.contents_box{
+    margin: 20px 0;
+    height: 650px;
+    background-image: url(./image/contents-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contents ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contents ul li{
+    padding: 10px;
+}
+.work_product{
+    width: 250px;
+    height: 250px;
+    margin: 16px;
+    background-color: #41403e;
+    border-radius: 50%;
+    overflow: hidden;
+    transition-duration: 1s;
+    
+}
+.work_product img {
+    width: 100%;
+    transition: all 500ms ease-in-out;
+}
+.work_product:hover img{
+    transform: scale(1.3);
+    cursor: pointer;
+    
+}
   /* Contact */
 #contact {
     padding: 50px 0;
@@ -265,15 +301,10 @@ button {
     text-align: center;
 }
 
-.contact__title,
-.contact__email,
-.contact__rights {
+.contact__title{
     color: #4d4d4d;
     font-size: 24px;
     font-weight: 600;
-}
-.contact__rights {
-    font-size: 16px;
 }
 
 .contact__title {
@@ -294,71 +325,7 @@ button {
 .contact__title{
     font-size: 26px;
 }
-.fab{color: white;}
 
-.sub-img{
-
-    width: 100%;
-    max-width: 1000px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-}
-.sub-img2{
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-}
-.sub-img2-box{
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-}
-.sub-box{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
-.sub-box2{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
-.sub-box3{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
-.show{
-    width: 100%;
-    max-width: 1200px;
-}
-.sub-box a{
-    position: absolute;
-    width: 257px;
-    height: 64px;
-    left: 638px;
-    top: 122px;
-}
-.sub-box2 a{
-    position: absolute;
-    width: 257px;
-    height: 64px;
-    left: 638px;
-    top: 122px;
-}
-.sub-box3 a{
-    position: absolute;
-    width: 257px;
-    height: 64px;
-    left: 638px;
-    top: 122px;
-}
 .section__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -369,6 +336,9 @@ button {
     
     #home{
         width: 100%;
+    }
+    .home__avatar_text span{
+        font-size: 16px;
     }
     .navbar__toggle-btn {
         display: block;
@@ -447,5 +417,11 @@ button {
     
     .skill_power_container{
         height: 900px;
+    }
+    .contents_box{
+        height: 1280px;
+    }
+    .contents ul {
+        justify-content: center;
     }
 }
