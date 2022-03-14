@@ -424,4 +424,20 @@ button {
     .contents ul {
         justify-content: center;
     }
+    .nike{
+        background-image: url(./image/nike.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .nikelink{
+        display: none;
+    }
+    .gow{
+        background-image: url(./image/gow.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .gowlink{
+        display: none;
+    }
 }
