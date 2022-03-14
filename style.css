@@ -410,7 +410,7 @@ button {
         left: 60%;
     }
     /* skill */
-    #aboutskills h1{
+    #aboutskills h1,#work h1{
         font-size: 36px;
     }
     #aboutskills p{
