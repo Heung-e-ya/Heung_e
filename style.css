@@ -332,6 +332,35 @@ button {
 }
 .heart{width: 50px;}
 /* resize */
+@media screen and (max-width: 1005px){
+    .contents_box {
+        height: 959px;  
+    }
+    .nike{
+        background-image: url(./image/nike.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .nikelink{
+        display: none;
+    }
+    .hansam{
+        background-image: url(./image/hansam.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hansamlink{
+        display: none;
+    }
+    .gow{
+        background-image: url(./image/gow.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .gowlink{
+        display: none;
+    }
+}
 @media screen and (max-width: 768px) {
     
     #home{
@@ -419,25 +448,10 @@ button {
         height: 900px;
     }
     .contents_box{
-        height: 1280px;
+        height: 1605px;
     }
     .contents ul {
         justify-content: center;
     }
-    .nike{
-        background-image: url(./image/nike.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .nikelink{
-        display: none;
-    }
-    .gow{
-        background-image: url(./image/gow.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .gowlink{
-        display: none;
-    }
+    
 }
