@@ -1,250 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heung - Portfolio</title>
-    <meta name="description" content="My portfolio.">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description" content="My portfolio." />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="main.js" defer></script>
     <!-- favicon -->
     <link rel="shortcut icon" href="./image/my_favicon.ico" />
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css"
+      integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- progressbar js -->
     <!-- <link rel="stylesheet" type="text/css" href="./loading-bar/dist/loading-bar.css">
     <script type="text/javascript" src="./loading-bar/dist/loading-bar.min.js"></script> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav id="navbar">
-        <div>
-          <a id="navbar__logo" href="#">HeungNyun</a>
-        </div>
-        <ul class="navbar__menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#aboutskills">About & Skills</a></li>
-          <li><a href="#work">My Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <!-- Toogle button -->
-        <button class="navbar__toggle-btn">
-          <i class="fas fa-bars"></i>
-        </button>
+      <div>
+        <a id="navbar__logo" href="#">HeungNyun</a>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutskills">About & Skills</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Toogle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
+
+    <div id="home" class="navbar--dark">
+      <div class="home_container">
+        <div class="home__avatar">
+          <div class="home__avatar_text">
+            <h2>김흥년<span> Kim Heung Nyun</span></h2>
+            <p><strong> Age</strong> : 28</p>
+            <p><strong> E-mail</strong> : hoonun1@naver.com</p>
+            <p><strong> TEL</strong> : 010-3937-0379</p>
+          </div>
+        </div>
+        <h1 class="home__title">Hello, <br />I'm Kim heung nyun</h1>
+        <h3 class="home__description">
+          저는 모험을 좋아하는 사람입니다. <br />
+          어떤 시련이 와도 찾아서 헤쳐나가며 실행에 옮겨 극복했습니다. <br />
+          그러한 시간들 속에서 쌓여온 경험들이 이제는 제 몸에 박혀 하나의 일부가
+          되었고 <br />
+          그 능력으로 제 꿈을 향해 달려나가고 있습니다.
+        </h3>
+        <button class="home__contact">Contact Me</button>
       </div>
-      <div id="home" class="navbar--dark">
-        <div class="home_container">
-          <div class="home__avatar">
-              <div class="home__avatar_text">
-                <h2>김흥년<span> Kim Heung Nyun</span></h2>
-                <p><strong> Age</strong> : 28</p>
-                <p><strong> E-mail</strong> : hoonun1@naver.com</p>
-                <p><strong> TEL</strong> : 010-3937-0379</p>
+    </div>
+    <section id="aboutskills" class="section section__container">
+      <h1>About & Skills</h1>
+      <p>
+        저는 코딩을 한 지 1년 정도 되었고 Photoshop, Illustrator, Figma와 더불어
+        <br />
+        HTML, CSS, JavaScript, jQuery등 기술을 검색하며 찾아보고 발전시켜
+        나아가고 있습니다. 혼자 찾아가며 하다보니 모든 면이 다 서투릅니다.<br />
+        하지만 기술을 찾아 만들어 나가는데 있어 최선을 다하고 있습니다.
+      </p>
+      <div class="skill_container">
+        <ul class="about_majors">
+          <li class="major">
+            <div class="icon">
+              <i><img src="./image/html.png" alt="" /></i>
+            </div>
+            <h2>HTML</h2>
+          </li>
+          <li class="major">
+            <div class="icon">
+              <i><img src="./image/css.png" alt="" /></i>
+            </div>
+            <h2>CSS</h2>
+          </li>
+          <li class="major">
+            <div class="icon">
+              <i><img src="./image/javascript.png" alt="" /></i>
+            </div>
+            <h2>Javascript</h2>
+          </li>
+          <li class="major">
+            <div class="icon">
+              <i><img src="./image/jQuery.png" alt="" /></i>
+            </div>
+            <h2>jQuery</h2>
+          </li>
+          <li class="major">
+            <div class="icon">
+              <i><img src="./image/photoshop.png" alt="" /></i>
+            </div>
+            <h2>Photoshop</h2>
+          </li>
+          <li class="major">
+            <div class="icon">
+              <i><img src="./image/Illustrator_CC_ico.png" alt="" /></i>
+            </div>
+            <h2>Illustrator</h2>
+          </li>
+          <li class="major">
+            <div class="icon">
+              <i><img src="./image/figma.png" alt="" /></i>
+            </div>
+            <h2>Figma</h2>
+          </li>
+        </ul>
+      </div>
+      <div class="skll_power section section__container">
+        <div class="skill_power_container">
+          <div class="skill_box">
+            <h3>HTML</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped active bar-color"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%"
+              >
+                중상
               </div>
+            </div>
+            <h3>CSS</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped active"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%"
+              >
+                중상
+              </div>
+            </div>
+            <h3>Javascript</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped active"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 65%"
+              >
+                중상
+              </div>
+            </div>
+            <h3>jQuery</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped active"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 65%"
+              >
+                중상
+              </div>
+            </div>
+            <h3>photoshop</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped active"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              >
+                중
+              </div>
+            </div>
+            <h3>Illustrator</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped active"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 45%"
+              >
+                중하
+              </div>
+            </div>
+            <h3>Figma</h3>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped active"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              >
+                중
+              </div>
+            </div>
           </div>
-            <h1 class="home__title">Hello, <br>I'm Kim heung nyun </h1>
-            <h3 class="home__description">
-              저는 모험을 좋아하는 사람입니다. <br>
-              어떤 시련이 와도 찾아서 헤쳐나가며
-              실행에 옮겨 극복했습니다. <br>
-              그러한 시간들 속에서 쌓여온 경험들이
-              이제는 제 몸에 박혀 하나의 일부가 되었고 <br>
-              그 능력으로 제 꿈을 향해 달려나가고 있습니다.</h3>
-            <button class="home__contact">Contact Me</button>
+          <div class="tool_box">
+            <h3>Tool</h3>
+            <ul>
+              <li>Visual Studio Code</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Figma(interface design tool)</li>
+            </ul>
+            <h3>Ect</h3>
+            <ul>
+              <li>Git</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <section id="aboutskills" class="section section__container">
-        <h1>About & Skills</h1>
-        <p>저는 코딩을 한 지 1년 정도 되었고 Photoshop, Illustrator, Figma와 더불어 <br> HTML, CSS, JavaScript, jQuery등 기술을 검색하며 찾아보고
-          발전시켜 나아가고 있습니다. 혼자 찾아가며 하다보니 모든 면이 다 서투릅니다.<br> 하지만 기술을 찾아 만들어 나가는데 있어 최선을 다하고 있습니다.
-        </p>
-        <div class="skill_container">
-          <ul class="about_majors">
-            <li class="major">
-              <div class="icon">
-                <i><img src="./image/html.png" alt=""></i>
-              </div>
-              <h2>HTML</h2>
-            </li>
-            <li class="major">
-              <div class="icon">
-                <i><img src="./image/css.png" alt=""></i>
-              </div>
-              <h2>CSS</h2>
-            </li>
-            <li class="major">
-              <div class="icon">
-                <i><img src="./image/javascript.png" alt=""></i>
-              </div>
-              <h2>Javascript</h2>
-            </li>
-            <li class="major">
-              <div class="icon">
-                <i><img src="./image/jQuery.png" alt=""></i>
-              </div>
-              <h2>jQuery</h2>
-            </li>
-            <li class="major">
-              <div class="icon">
-                <i><img src="./image/photoshop.png" alt=""></i>
-              </div>
-              <h2>Photoshop</h2>
-            </li>
-            <li class="major">
-              <div class="icon">
-                <i><img src="./image/Illustrator_CC_ico.png" alt=""></i>
-              </div>
-              <h2>Illustrator</h2>
-            </li>
-            <li class="major">
-              <div class="icon">
-                <i><img src="./image/figma.png" alt=""></i>
-              </div>
-              <h2>Figma</h2>
-            </li>
-          </ul>
-        </div>
-        <div class="skll_power section section__container">
-          <div class="skill_power_container">
-            <div class="skill_box">
-              <h3>HTML</h3>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped active bar-color" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                  중상
+    </section>
+    <section id="work" class="section section__container">
+      <h1>My Work(Link)</h1>
+      <p>지금까지 작업한 내용입니다.</p>
+      <div>
+        <div class="contents_box">
+          <div class="contents">
+            <ul>
+              <li>
+                <span>Nike (Web)</span>
+                <div class="work_product nike">
+                  <a href="./Nike----master/index.html" class="nikelink"
+                    ><img src="./image/nike.jpg" alt=""
+                  /></a>
                 </div>
-              </div>
-              <h3>CSS</h3>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                  중상
+              </li>
+              <li>
+                <span>Bmw (responsible)</span>
+                <div class="work_product">
+                  <a href="http://hoonun1.dothome.co.kr/"
+                    ><img src="./image/bmw.png" alt=""
+                  /></a>
                 </div>
-              </div>
-              <h3>Javascript</h3>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                  중상
+              </li>
+              <li>
+                <span>Hansam (Web)</span>
+                <div class="work_product hansam">
+                  <a class="hansamlink" href="./re-hansam/index.html"
+                    ><img src="./image/hansam.jpg" alt=""
+                  /></a>
                 </div>
-              </div>
-              <h3>jQuery</h3>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                  중상
+              </li>
+              <li>
+                <span>God of war (Web)</span>
+                <div class="work_product gow">
+                  <a class="gowlink" href="./gow/gow.html"
+                    ><img src="./image/gow.jpg" alt=""
+                  /></a>
                 </div>
-              </div>
-              <h3>photoshop</h3>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                  중
+              </li>
+              <li>
+                <span>Ect</span>
+                <div class="work_product">
+                  <a href="#"><img src="./image/ect.jpg" alt="" /></a>
                 </div>
-              </div>
-              <h3>Illustrator</h3>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                  중하
-                </div>
-              </div>
-              <h3>Figma</h3>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                  중
-                </div>
-              </div>
-            </div>
-            <div class="tool_box">
-              <h3>Tool</h3>
-              <ul>
-                <li>Visual Studio Code</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>Figma(interface design tool)</li>
-              </ul>
-              <h3>Ect</h3>
-              <ul>
-                <li>Git</li>
-              </ul>
-            </div>
-          </div>
-            
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-      <section id="work" class="section section__container">
-        <h1>My Work(Link)</h1>
-        <p>지금까지 작업한 내용입니다.</p>
-        <div>
-          <div class="contents_box">
-            <div class="contents">
-              <ul>
-                <li>
-                  <span>Nike (Web)</span>
-                  <div class=" work_product nike">
-                    <a href="http://hoonun.dothome.co.kr/" class="nikelink"><img src="./image/nike.jpg" alt=""></a>
-                  </div>
-                </li>
-                <li>
-                  <span>Bmw (responsible)</span>
-                  <div class=" work_product">
-                    <a href="http://hoonun1.dothome.co.kr/"><img src="./image/bmw.png" alt=""></a>
-                  </div>
-                </li>
-                <li>
-                  <span>Hansam (Web)</span>
-                  <div class=" work_product hansam">
-                    <a class="hansamlink" href="./re-hansam/index.html"><img src="./image/hansam.jpg" alt=""></a>
-                  </div>
-                </li>
-                <li>
-                  <span>God of war (Web)</span>
-                  <div class=" work_product gow">
-                    <a class="gowlink" href="./gow/gow.html"><img src="./image/gow.jpg" alt=""></a>
-                  </div>
-                </li>
-                <li>
-                  <span>Ect</span>
-                  <div class=" work_product">
-                    <a href="#"><img src="./image/ect.jpg"  alt=""></a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-       <!-- Contact -->
+      </div>
+    </section>
+    <!-- Contact -->
     <section id="contact" class="section">
-        <h1 class="contact__title">끝까지 봐주셔서 감사합니다.</h1>
-        <div id="container">
-          <svg class="heart" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 100">
-                          <path fill-opacity="0" stroke-width="1" stroke="#bbb" d="M81.495,13.923c-11.368-5.261-26.234-0.311-31.489,11.032C44.74,13.612,29.879,8.657,18.511,13.923  C6.402,19.539,0.613,33.883,10.175,50.804c6.792,12.04,18.826,21.111,39.831,37.379c20.993-16.268,33.033-25.344,39.819-37.379  C99.387,33.883,93.598,19.539,81.495,13.923z"/>
-                          <path id="heart-path" fill-opacity="0" stroke-width="3" stroke="#ED6A5A" d="M81.495,13.923c-11.368-5.261-26.234-0.311-31.489,11.032C44.74,13.612,29.879,8.657,18.511,13.923  C6.402,19.539,0.613,33.883,10.175,50.804c6.792,12.04,18.826,21.111,39.831,37.379c20.993-16.268,33.033-25.344,39.819-37.379  C99.387,33.883,93.598,19.539,81.495,13.923z"/>
-                      </svg>
-        </div>
-        <h2 class="contact__email">010-3937-0379</h2>
-        <h2 class="contact__email">hoonun1@naver.com</h2>
-        <div class="contact__links">
+      <h1 class="contact__title">끝까지 봐주셔서 감사합니다.</h1>
+      <div id="container">
+        <svg
+          class="heart"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          x="0px"
+          y="0px"
+          viewBox="0 0 100 100"
+        >
+          <path
+            fill-opacity="0"
+            stroke-width="1"
+            stroke="#bbb"
+            d="M81.495,13.923c-11.368-5.261-26.234-0.311-31.489,11.032C44.74,13.612,29.879,8.657,18.511,13.923  C6.402,19.539,0.613,33.883,10.175,50.804c6.792,12.04,18.826,21.111,39.831,37.379c20.993-16.268,33.033-25.344,39.819-37.379  C99.387,33.883,93.598,19.539,81.495,13.923z"
+          />
+          <path
+            id="heart-path"
+            fill-opacity="0"
+            stroke-width="3"
+            stroke="#ED6A5A"
+            d="M81.495,13.923c-11.368-5.261-26.234-0.311-31.489,11.032C44.74,13.612,29.879,8.657,18.511,13.923  C6.402,19.539,0.613,33.883,10.175,50.804c6.792,12.04,18.826,21.111,39.831,37.379c20.993-16.268,33.033-25.344,39.819-37.379  C99.387,33.883,93.598,19.539,81.495,13.923z"
+          />
+        </svg>
+      </div>
+      <h2 class="contact__email">010-3937-0379</h2>
+      <h2 class="contact__email">hoonun1@naver.com</h2>
+      <div class="contact__links">
         <a href="https://github.com/Heung-e-ya" target="_blank">
-            <i class="fab fa-github"></i>
+          <i class="fab fa-github"></i>
         </a>
         <a href="https://www.instagram.com/heung_e_ya/" target="_blank">
-            <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram"></i>
         </a>
-        </div>
-
+      </div>
     </section>
     <!-- Arrow up -->
     <!-- <button class="arrow-up">
         <i class="fas fa-arrow-up"></i>
     </button> -->
-
-</body>
+  </body>
 </html>
