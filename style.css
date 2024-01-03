@@ -321,6 +321,7 @@ button {
 
 .work_product img {
   width: 100%;
+  height: 100%;
   transition: all 500ms ease-in-out;
 }
 
